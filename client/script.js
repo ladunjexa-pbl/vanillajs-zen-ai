@@ -87,7 +87,7 @@ const handleSubmit = async (e) => {
     data.set("wid", "256");
     data.set("hei", "256");
   }
-  const response = await fetch("https://zenai.onrender.com", {
+  const response = await fetch("https://zenai.onrender.com/", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

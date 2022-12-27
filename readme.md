@@ -81,7 +81,7 @@ ZenAI is a VanillaJS ChatGPT AI app that resembles the DALL-E app with the abili
 <!-- Folder Structure -->
 ### :bangbang: Folder Structure
 
-The folder structure of LunaAI is separated into server-side and client-side.
+The folder structure of ZenAI is separated into server-side and client-side.
 ```
 ZenAI-GPT-Dall-E/
 |- client/
@@ -115,7 +115,7 @@ Node.js used for the server-side, VanillaJS code using OpenAI DALL-E models, han
 <!-- ENV VARIABLES -->
 ### :key: Environment Variables
 
-In order to use LunaAI you have to create your OpenAI api key [here](https://openai.com/api), to run this web app, you will need to add the following environment variable to your .env file
+In order to use ZenAI you have to create your OpenAI api key [here](https://openai.com/api), to run this web app, you will need to add the following environment variable to your .env file
 
 `OPENAI_API_KEY`
 
@@ -234,7 +234,7 @@ Project Link: [https://github.com/ladunjexa/ZenAI-GPT-Dall-E](https://github.com
 <!-- Acknowledgments -->
 ## :gem: Acknowledgements
 
-This section used to mention useful resources and libraries that used in LunaAI ChatGPT
+This section used to mention useful resources and libraries that used in ZenAI ChatGPT DALL-E
 
  - [OpenAI API](https://openai.com/api)
  - [Google Fonts](https://fonts.google.com/)

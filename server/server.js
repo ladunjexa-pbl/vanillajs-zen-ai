@@ -17,23 +17,16 @@ app.use(express.json());
 
 app.get("/", async (req, res) => {
   res.status(200).send({
-    message: "Hello from ZenAI",
+    message: "Hello from asd",
   });
 });
 
 app.post("/", async (req, res) => {
   try {
     const prompt = req.body.prompt;
-    const width = req.body.width;
-    const height = req.body.height;
+    const width = req.body.wid;
+    const height = req.body.hei;
 
-    if (
-      !(width === height) &&
-      (height == 256 || height == 512 || height == 1024)
-    ) {
-      width = 256;
-      height = 256;
-    }
     const response = await openai.createImage({
       prompt: `${prompt}`,
       n: 1,

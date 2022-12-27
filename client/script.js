@@ -74,15 +74,28 @@ const handleSubmit = async (e) => {
   // messageDiv.innerHTML = "..."
   loader(messageDiv);
 
-  const response = await fetch("https://zenai.onrender.com", {
+  if (
+    data.get("wid").length === 0 ||
+    data.get("hei").length === 0 ||
+    !(
+      data.get("wid") == 256 ||
+      data.get("wid") == 512 ||
+      data.get("wid") == 1024
+    ) ||
+    !(data.get("wid") === data.get("hei"))
+  ) {
+    data.set("wid", "256");
+    data.set("hei", "256");
+  }
+  const response = await fetch("http://localhost:5000", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
       prompt: data.get("prompt"),
-      width: data.get("width"),
-      height: data.get("height"),
+      wid: data.get("wid"),
+      hei: data.get("hei"),
     }),
   });
 

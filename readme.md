@@ -33,7 +33,7 @@
 </p>
    
  <h4>
-    <a href="https://github.com/ladunjexa/ZenAI-GPT-Dall-E/">View Demo</a>
+    <a href="https://zen-ai-gpt-dall-e.vercel.app/">View Demo</a>
   <span> · </span>
     <a href="https://github.com/ladunjexa/ZenAI-GPT-Dall-E">Documentation</a>
   <span> · </span>
